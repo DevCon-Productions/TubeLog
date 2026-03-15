@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        width: 220px;
+        padding: 16px;
+        font-family: "Segoe UI", sans-serif;
+        background: #0f0f0f;
+        color: #fff;
+        margin: 0;
+      }
+      h2 {
+        margin: 0 0 12px 0;
+        font-size: 16px;
+        color: #ff4444;
+      }
+      .stat {
+        font-size: 13px;
+        color: #aaa;
+        margin-bottom: 8px;
+      }
+      .stat span {
+        color: #fff;
+        font-weight: 600;
+      }
+      button {
+        width: 100%;
+        padding: 10px;
+        margin-top: 8px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 13px;
+        font-weight: 600;
+      }
+      #viewHistory {
+        background: #ff4444;
+        color: #fff;
+      }
+      #viewHistory:hover {
+        background: #cc0000;
+      }
+      #clearHistory {
+        background: #2a2a2a;
+        color: #aaa;
+        margin-top: 6px;
+      }
+      #clearHistory:hover {
+        background: #3a3a3a;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>TubeLog</h2>
+    <div class="stat">Videos: <span id="count">0</span></div>
+    <div class="stat">Runtime: <span id="runtime">0h 0m</span></div>
+    <button id="viewHistory">View Full History</button>
+    <button id="clearHistory">Clear History</button>
+    <script src="popup.js"></script>
+  </body>
+</html>
